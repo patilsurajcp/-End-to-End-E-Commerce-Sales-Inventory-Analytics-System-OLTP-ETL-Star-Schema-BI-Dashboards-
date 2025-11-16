@@ -1,0 +1,27 @@
+{
+  "source_database": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "ecommerce_oltp",
+    "user": "root",
+    "password": "your_password_here"
+  },
+  "target_database": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "ecommerce_dw",
+    "user": "root",
+    "password": "your_password_here"
+  },
+  "etl_settings": {
+    "batch_size": 1000,
+    "incremental_load": true,
+    "last_etl_run": null,
+    "timezone": "UTC"
+  },
+  "logging": {
+    "log_file": "etl_logs.log",
+    "log_level": "INFO"
+  }
+}
+
